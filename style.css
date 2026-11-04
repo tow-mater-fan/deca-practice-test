@@ -1,0 +1,147 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff;font-size:16px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:8px 20px;min-height:72px}
+.logo{height:56px}
+.title{font-size:26px;flex:1;text-align:center}
+.topright{min-width:170px}
+.topright{text-align:right}
+.bar{background:#333;color:#fff;text-align:center;padding:10px;font-size:20px}
+main{padding:10px 20px 50px;max-width:1100px;margin:0 auto}
+button{font:inherit;cursor:pointer;border:1px solid #888;background:#ddd;color:#000;padding:4px 10px}
+.box{border:1px solid #999;margin:12px 0}
+.box h3{background:#333;color:#fff;margin:0;padding:10px 14px;font-weight:normal;font-size:20px}
+.box .body{padding:12px 14px}
+.info b{display:block;text-decoration:underline;margin-top:8px}
+.info input{font:inherit;padding:2px 4px;width:320px;max-width:100%;border:1px solid #888}
+table.tests{border-collapse:collapse;width:100%}
+table.tests td{border:1px solid #666;padding:3px 6px}
+td.cl{font-weight:bold;background:#eee}
+td.cl a{color:#000;text-decoration:none}
+.timer{border:1px solid #888;background:#eee;padding:4px 30px;text-align:center;font-weight:bold;font-size:28px}
+.timer small{display:block;font-size:14px}
+.legend{background:#555;color:#fff;display:flex;justify-content:space-around;padding:8px;text-align:center}
+.dot{display:inline-block;width:22px;height:14px;border-radius:50%;border:2px solid #000;vertical-align:middle}
+.dot.n{background:#fff}.dot.s{background:#000}.dot.u{background:#ee3}
+.red{color:#e8291c}.green{color:#2f7d1f}
+.note{margin:14px 0;font-size:20px}
+.note ul{margin:6px 0 0;padding-left:60px}
+.navs{display:flex;justify-content:center;gap:60px;margin:14px 0;border-bottom:1px solid #000;padding-bottom:14px}
+.navs button{padding:8px 14px}
+.q{margin:18px 0 8px;font-size:20px}
+.opt{margin:10px 0 10px 50px;font-size:20px;position:relative}
+.opt input{margin:0 6px 0 0}
+.opt .ast{position:absolute;margin-left:46px;white-space:nowrap}
+.opt label{cursor:pointer}
+.star{display:inline-block;width:14px;text-align:center}
+.exp{margin:6px 0 0 50px;font-size:17px;color:#222}
+.exp div{margin:3px 0}
+.unans a{color:#e8291c;text-decoration:underline;cursor:pointer}
+.review a{cursor:pointer;text-decoration:underline}
+.calc{position:fixed;top:140px;left:calc(50% - 120px);width:240px;background:#555;padding:0 10px 10px;z-index:20;user-select:none;touch-action:none}
+.calc .cbar{color:#fff;padding:6px 0;cursor:move;display:flex;justify-content:space-between;align-items:center;touch-action:none}
+.calc .x{padding:0 7px}
+.calc .scr{background:#fff;color:#333;text-align:right;font-size:28px;padding:4px 8px;margin-bottom:8px;overflow:hidden;min-height:44px}
+.calc .keys{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.calc .keys button{height:40px;font-size:20px;padding:0}
+.calc .keys button.eq{grid-column:span 3}
+.cb{width:60px;height:40px;white-space:nowrap;font-size:14px;line-height:1.1;padding:2px}
+
+/* test list page */
+body.list{font-family:"Raleway","Helvetica Neue",Arial,sans-serif;color:#212529}
+body.list .bar{background:#343a40;font-size:20px}
+body.list .box{border:1px solid #ddd;border-radius:4px;margin:12px 0}
+body.list .box h3{background:#343a40;margin:0;padding:18px 24px;font-size:22px;border-radius:3px 3px 0 0}
+body.list .box .body{padding:18px 24px}
+body.list .info{display:grid;grid-template-columns:2fr 2fr;gap:14px 24px}
+body.list .info b{margin:0;font-size:18px}
+body.list .info input{padding:4px 6px;border:1px solid #ccc;border-radius:3px;width:100%}
+body.list .note2{background:#d1ecf1;color:#0c5460;border:1px solid #bee5eb;padding:14px 20px;margin:12px 0;border-radius:4px}
+body.list button{border:0;border-radius:4px;padding:8px 16px;background:#343a40;color:#fff}
+body.list button.bb{background:#3b82f6}
+body.list table.tests{margin-top:8px}
+body.list table.tests td{border:1px solid #444;padding:4px 6px}
+body.list table.tests tr:nth-child(even){background:#e6e7ea}
+body.list td.cl{background:#f3f3f3;padding:10px 8px;font-size:18px}
+
+body.list .top{min-height:100px}
+body.list .logo{height:50px}
+body.list .logout{background:#343a40;color:#fff;border:0;border-radius:4px;padding:8px 14px;font-size:16px}
+body.list .info{display:block}
+body.list .info b{display:block;margin-top:0;margin-bottom:2px}
+body.list .info b+*{}
+body.list .info{line-height:1.5}
+body.list .info b:nth-of-type(2){margin-top:14px}
+body.list .box.tl h3{background:#f7f7f7;color:#212529;border-bottom:1px solid #ddd;padding:18px 28px;font-size:24px}
+body.list .box.tl .body{padding:0}
+body.list table.tests{margin-top:0;width:46%;min-width:760px}
+body.list table.tests td{padding:3px 3px;vertical-align:middle}
+body.list td.cl{padding:8px 6px}
+body.list table.tests button{padding:10px 18px;font-size:18px}
+body.list .note2{margin:22px 0}
+body.list button{background:#343a40;color:#fff}
+body.list button.bb{background:#3b82f6}
+body.list .logout{background:#343a40}
+#go{background:#343a40;color:#fff;border:0;border-radius:4px}
+.top .logo{height:64px}
+
+/* test view (copy of the real test page) */
+body.test{font-family:Arial,Helvetica,sans-serif;font-size:16px;color:#000}
+body.test .top{min-height:78px;height:78px;padding:0 16px 0 25px}
+body.test .logo{height:60px;width:auto}
+body.test .title{font-size:25px;color:#222}
+body.test .topright{display:flex;align-items:center;gap:43px;min-width:0}
+body.test .minb{width:28px;height:21px;padding:0;border:1px solid #ddd;border-radius:3px;background:#fff;color:#000;font-size:12px;line-height:1;position:relative;top:-18px}
+body.test .timer{width:317px;height:62px;border:1px solid #bbb;background:#eee;padding:0;text-align:center;font-weight:bold;font-size:28px;line-height:36px}
+body.test .timer small{display:block;font-size:14.5px;line-height:20px;margin-top:3px}
+body.test .bar{height:63px;background:#333;position:relative;padding:0;display:flex;align-items:center;justify-content:center}
+body.test .bar .bt{color:#fff;font-size:21px;line-height:24px;text-align:center;margin-top:-4px}
+body.test .bar .bt small{display:block;font-size:13px;line-height:15px}
+body.test .calcbtn{position:absolute;left:25px;top:9px;width:44px;height:44px;padding:0;background:none;border:0}
+body.test .calcbtn img{width:44px;height:44px;display:block}
+body.test .wifi{position:absolute;right:85px;top:15px;width:33px}
+body.test .legend{background:#555;color:#fff;display:flex;justify-content:space-around;height:68px;padding:11px 0 0;font-size:14.5px;line-height:20px;text-align:center}
+body.test .legend>div{width:33%}
+body.test .dot{width:20px;height:12px;border-width:3px;margin-top:7px}
+body.test main{max-width:none;padding:42px 16px 40px}
+body.test .alertr{position:relative;background:#f2dede;border:1px solid #ebccd1;color:#a94442;font-weight:bold;padding:17px 17px 18px;border-radius:3px;line-height:20px}
+body.test .alertr ul{margin:0;padding-left:52px;list-style:circle}
+body.test .alertr .cls{position:absolute;right:16px;top:8px;font-size:21px;color:#d9a5a5;cursor:pointer;line-height:1}
+body.test .navs{position:relative;display:block;height:34px;margin:32px 0 0;padding:0;border:0}
+body.test .navs button{position:absolute;top:0;height:34px;background:#6c757d;color:#fff;border:0;border-radius:3px;padding:0 14px;font-size:14.5px;white-space:nowrap}
+body.test .navs:after{content:"";position:absolute;left:0;right:0;bottom:-18px;border-bottom:2px solid #222}
+body.test .note{margin:61px 0 0;font-size:16px;line-height:21px}
+body.test .note ul{margin:4px 0 0;padding-left:52px}
+body.test .q{margin:50px 0 0;font-size:16px;line-height:21px}
+body.test .dot{vertical-align:middle}
+body.test .opt{margin:0 0 0 50px;font-size:16px;line-height:21px;padding-top:11px}
+body.test .opt input{margin:0 2px 0 0;vertical-align:middle}
+body.test .exp{margin-left:50px;font-size:16px}
+body.test .star{width:auto}
+body.test button#sub,body.test button#sub2{background:#5cb85c;color:#fff;border:0;border-radius:3px;padding:8px 14px}
+body.test .navs button,body.test #prev,body.test #next,body.test #nextu{background:#6c757d!important;color:#fff!important}
+body.test #sub,body.test #sub2{background:#5cb85c!important}
+
+/* sign-on page */
+body.login{background:#000;color:#fff;font-family:"Raleway","Helvetica Neue",Arial,sans-serif}
+body.login .top,body.login .bar{display:none}
+body.login main{max-width:none;padding:24px 16px 60px}
+.lg-title{text-align:center;font-size:21px;margin:30px 0 26px}
+.lg-wrap{max-width:880px;margin:0 auto;border:1px solid #c9a227;border-radius:44px;background:#111;padding:50px 40px;display:flex;gap:30px;align-items:flex-start;justify-content:center}
+.lg-card{background:#fff;color:#212529;border-radius:9px;padding:19px;width:440px;flex:none;font-size:15px;line-height:1.4}
+.lg-card p{margin:0 0 14px}.lg-card ul{margin:0 0 14px;padding-left:30px}
+.lg-logo{display:block;width:80%;margin:6px auto 22px}
+.lg-red{color:#e8291c}
+.lg-card .red{color:#e8291c}.lg-card .green{color:#2f7d1f}
+.lg-form{width:292px;flex:none;padding-top:0}
+@media(max-width:860px){.lg-wrap{flex-wrap:wrap}}
+.lg-form h2{font-size:18px;font-weight:normal;margin:0 0 20px 6px}
+.lg-form input[type=text],.lg-form input[type=password],.lg-form input:not([type=checkbox]){display:block;width:100%;height:33px;border:1px solid #ccc;border-radius:2px;padding:0 10px;font-size:14px;margin-bottom:14px;background:#fff}
+.lg-show{display:block;margin:20px 0 22px;font-size:15px}
+.lg-show input{margin-right:4px}
+#lg_go{width:100%;height:33px;background:#343a40;color:#fff;border:0;border-radius:2px;font-size:15px;padding:0}
+body.login button#lg_go{background:#343a40;color:#fff}
+
+body.test .q.skip{color:#b5303b;font-weight:bold}
+body.test .opt.skip{color:#c0393b}
+.calc .scr{min-height:60px}.calc .scr .ex{font-size:13px;color:#777;height:16px;overflow:hidden}.calc .scr #cs{font-size:28px;line-height:34px}
+.lg-msg{margin-top:12px;font-size:14px;min-height:18px}#lg_go:disabled{opacity:.6}
